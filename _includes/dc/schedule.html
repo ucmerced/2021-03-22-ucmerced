@@ -177,6 +177,91 @@ The schedule for the different curricula are listed here:
   </div>
 </div>
 
+{% elsif site.curriculum == "dc-geospatial-custom" %}
+<div class="row">        <!-- first two days -->
+  <div class="col-md-6"> <!-- left column -->
+    <h3>Day 1</h3>
+    <table class="table table-striped">
+      <tr>
+        <td>Before starting</td>
+        <td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
+      </tr>
+      <tr>
+        <td>Morning</td>
+        <td><a href="https://datacarpentry.org/organization-geospatial/01-intro-raster-data/index.html">Introduction to Raster Data</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="https://datacarpentry.org/organization-geospatial/03-crs/index.html">Coordinate Reference Systems and Geospatial Landscapes</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="https://datacarpentry.org/r-intro-geospatial/01-rstudio-intro/index.html">Introduction to R and RStudio</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="https://datacarpentry.org/r-intro-geospatial/04-data-structures-part2/index.html">Exploring Data Frames</a></td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-md-6"> <!-- right column -->
+    <h3>Day 2</h3>
+    <table class="table table-striped">
+      <tr>
+        <td>Morning</td>
+        <td><a href="https://datacarpentry.org/organization-geospatial/02-intro-vector-data/index.html">Introduction to Vector Data</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="https://datacarpentry.org/r-raster-vector-geospatial/06-vector-open-shapefile-in-r/index.html">Open and Plot Shapefiles</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="https://datacarpentry.org/r-intro-geospatial/05-data-subsetting/index.html">Subsetting Data</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="https://datacarpentry.org/r-intro-geospatial/06-dplyr/index.html">DataFrame Manipulation with dplyr</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="Explore and Plot by Vector Layer Attributes">Explore and Plot by Vector Layer Attributes</a></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <h3>Day 3</h3>
+    <table class="table table-striped">
+      <tr>
+        <td>Morning</td>
+        <td><a href="https://datacarpentry.org/r-intro-geospatial/07-plot-ggplot2/index.html">Introduction to Visualization</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="https://datacarpentry.org/r-intro-geospatial/08-writing-data/index.html">Writing Data</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="https://datacarpentry.org/r-raster-vector-geospatial/09-vector-when-data-dont-line-up-crs/index.html">Handling Spatial Projection & CRS</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="https://datacarpentry.org/r-raster-vector-geospatial/10-vector-csv-to-shapefile-in-r/index.html">Convert from .csv to a Shapefile</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="https://datacarpentry.org/r-raster-vector-geospatial/11-vector-raster-integration/index.html">Manipulate Raster Data</a></td>
+      </tr>
+      <tr>
+        <td>End</td>
+        <td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
 {% else %}
 {% include warning-curriculum.html %}
 {% endif %}
